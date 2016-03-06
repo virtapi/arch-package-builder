@@ -1,4 +1,5 @@
 new File('aur-packages').eachLine { line ->
+  println(line)
 	job(line) {
 		scm {
 			git("https://aur.archlinux.org/${line}")
