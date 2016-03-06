@@ -4,7 +4,7 @@ new File('aur-packages').eachLine { line ->
 			git("https://aur.archlinux.org/${line}")
 		}
 		steps {
-			makechrootpkg -c -r "/mnt/aur/build_test"
+			println("makechrootpkg -c -r /mnt/aur/build_test")
 		}
 	}
 }
