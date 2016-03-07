@@ -9,6 +9,9 @@ PackagesFile.eachLine { line ->
       scm {
         git("https://aur.archlinux.org/${line}.git")
       }
+      triggers {
+        scm('*/15 * * * *')
+      }
       steps {
         shell("sudo arch-nspawn /mnt/aur/build_test/root pacman -Syyu; sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${line}")
       }
