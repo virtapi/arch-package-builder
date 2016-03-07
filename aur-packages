@@ -11,6 +11,7 @@ chromium-pepper-flash
 chromium-widevine
 clerk-git
 clion
+cloog
 codecs
 compton-git
 conky-lua
@@ -50,8 +51,11 @@ i3-gaps-git
 i3-workspace-switch
 iat
 ino
+isl
 ix
 jitsi
+john-mpi
+jpegexiforient
 kde-agent
 kdeartwork-iconthemes
 kdepim4-runtime
@@ -73,6 +77,7 @@ libkgapi4
 libkolab4
 liblmdb
 liblmdb-debug
+libmowgli
 libpng12
 libsignon-qt4
 libzeitgeist
@@ -84,6 +89,7 @@ minted
 morse2ascii
 movgrab
 mpd-sima
+mpich
 msp430-libc
 msp430mcu
 mspdebug
@@ -219,6 +225,7 @@ prelink
 printrun-git
 puppetdb
 puppetdb-terminus
+pycharm-community
 pycharm-professional
 python2-cartopy
 python2-cliapp
@@ -258,6 +265,7 @@ ruby-droplet_ctl-git
 rxvt-unicode-patched
 skipfish
 slowhttptest
+sowing
 spotify-beta
 sslsniff
 stapler
