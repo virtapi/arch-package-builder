@@ -65,7 +65,6 @@ stapler
 sublime-text-dev
 teiler-git
 telegram-bin
-tftp-hpa-destruct
 thunarx-python
 tor-browser-en
 v8-3.15
@@ -77,3 +76,9 @@ xcwd-git
 xininfo-git
 yanc-font-git
 yaourt
+puppetdb
+puppetdb-terminus
+python-pypuppetdb
+python2-puppetboard
+python2-pypuppetdb
+tftp-hpa-destruct
