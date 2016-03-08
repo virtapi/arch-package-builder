@@ -1,7 +1,7 @@
 def PackagesFile = new File('/var/lib/jenkins/jobs/Arch Package Builder/workspace/aur-packages')
 PackagesFile.eachLine { line ->
   packageName = line.trim()
-  job("Arch Package ${packageName}") {
+  job("Arch_Package_${packageName}") {
     description("This Job builds the ${packageName} package for archlinux")
     concurrentBuild()
     label('master')
