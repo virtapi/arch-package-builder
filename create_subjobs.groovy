@@ -12,7 +12,9 @@ PackagesFile.eachLine { line ->
       scm('*/20 * * * *')
     }
     steps {
-      shell("sudo /usr/bin/arch-nspawn /mnt/aur/build_test/root pacman -Syyu; sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${line}")
+    // updates are fine, but there is currently no working locking
+    //shell("sudo /usr/bin/arch-nspawn /mnt/aur/build_test/root pacman -Syyu; sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${line}")
+    shell("sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${line}")
     }
   }
 }
