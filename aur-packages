@@ -167,7 +167,6 @@ perl-locale-maketext
 perl-log-any
 perl-mail-checkuser
 perl-mail-gpg
-perl-math-bigrat
 perl-math-complex
 perl-math-convexhull
 perl-math-libm
