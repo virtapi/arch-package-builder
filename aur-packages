@@ -148,14 +148,7 @@ pacaur-git
 package-query
 pamac-aur
 pandoc-bin
-papirus-gtk-theme
-papirus-icon-theme-gtk
-papirus-icon-theme-kde
-papirus-k3b-theme
-papirus-kmail-theme
-papirus-konsole-colorscheme
-papirus-look-and-feel
-papirus-qtcurve-theme
+papirus
 pelican-themes-git
 pencil
 perl-alien-wxwidgets
