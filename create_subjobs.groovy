@@ -27,4 +27,5 @@ PackagesFile.eachLine { line ->
       }
     }
   }
+  queue("Arch_Package_${packageName}")
 }
