@@ -19,13 +19,21 @@ PackagesFile.eachLine { line ->
       if( !folder.exists() ) {
         folder.mkdirs()
       }
-      artifactDeployer {
-        includes('*.pkg.tar.xz')
-        remoteFileLocation("/var/www/archlinux/aur/")
-        failIfNoFiles()
-        deleteRemoteArtifacts()
+      publishers {
+        artifactDeployer {
+          includes('*.pkg.tar.xz')
+          remoteFileLocation("/var/www/archlinux/aur/")
+          failIfNoFiles()
+          deleteRemoteArtifacts()
+        }
+        //postBuildScripts {
+          //steps {
+            //shell('/usr/bin/repo-add --new --quiet /var/www/archlinux/aur/repo.db.tar.gz /var/www/archlinux/aur/*.pkg.tar.xz')
+          //}
+          //onlyIfBuildSucceeds(true)
+        //}
       }
     }
   }
-  queue("Arch_Package_${packageName}")
+  //queue("Arch_Package_${packageName}")
 }
