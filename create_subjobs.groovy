@@ -21,7 +21,7 @@ PackagesFile.eachLine { line ->
       }
       artifactDeployer {
         includes('*.pkg.tar.xz')
-        remoteFileLocation("/var/www/archlinux/${packageName}/")
+        remoteFileLocation("/var/www/archlinux/aur/")
         failIfNoFiles()
         deleteRemoteArtifacts()
       }
