@@ -22,7 +22,7 @@ PackagesFile.eachLine { line ->
       //publishers {
         artifactDeployer {
           includes('*.pkg.tar.xz')
-          remoteFileLocation("/var/www/archlinux/aur/")
+          remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
           failIfNoFiles()
           deleteRemoteArtifacts()
         //}
