@@ -95,14 +95,11 @@ lib32-libpng12
 libaccounts-qt4
 libappindicator
 libcurl-compat
-libdbusmenu-glib
-libdbusmenu-gtk2
-libdbusmenu-gtk3
+libdbusmenu
 libgcrypt15
 libgfshare
 libgtkhtml
-libindicator-gtk2
-libindicator-gtk3
+libindicator
 libkfbapi
 libkgapi4
 libkolab4
