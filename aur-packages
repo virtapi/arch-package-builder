@@ -93,9 +93,7 @@ lemonbar-git
 lib32-libjpeg6-turbo
 lib32-libpng12
 libaccounts-qt4
-libappindicator-gtk2
-libappindicator-gtk3
-libappindicator-sharp
+libappindicator
 libcurl-compat
 libdbusmenu-glib
 libdbusmenu-gtk2
