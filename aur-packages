@@ -398,3 +398,4 @@ perl-b-hooks-op-check
 perl-lexical-sealrequirehints
 protobuf3
 python-protobuf3
+lemon
