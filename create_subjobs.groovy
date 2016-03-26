@@ -45,11 +45,13 @@ PackagesFile.eachLine { line ->
       }
       postBuildScripts {
         steps {
+          // how to we run this for ever artefact?
           //shell('/usr/bin/repo-add --new --quiet /var/www/archlinux/aur/os/x86_64/repo.db.tar.gz /var/www/archlinux/aur/*.pkg.tar.xz')
           shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}")
         }
         onlyIfBuildSucceeds(true)
       }
+      chucknorris()
     }
   }
   //queue("Arch_Package_${packageName}")
