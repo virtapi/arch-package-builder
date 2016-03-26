@@ -83,8 +83,6 @@ jslint
 kicad-pretty-git
 kio-mtp-git
 lemonbar-git
-lib32-libjpeg6-turbo
-lib32-libpng12
 libaccounts-qt4
 libappindicator
 libcurl-compat
