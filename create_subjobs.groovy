@@ -14,7 +14,7 @@ PackagesFile.eachLine { line ->
     steps {
       // updates are fine, but there is currently no working locking
       //shell("sudo /usr/bin/arch-nspawn /mnt/aur/build_test/root pacman -Syyu; sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${packageName}")
-      shell("sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${packageName}")
+      shell("sudo /usr/bin/makechrootpkg -u -c -r /mnt/aur/build_test -l ${packageName}")
       //def folder = new File("/var/www/archlinux/${packageName}/")
       //if( !folder.exists() ) {
         //folder.mkdirs()
