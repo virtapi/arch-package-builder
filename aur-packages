@@ -55,7 +55,6 @@ freshplayerplugin
 fritzing
 fzf-extras
 gdal1
-gddccontrol
 genymotion
 git-extras
 gitkraken
@@ -191,7 +190,6 @@ perl-file-find-rule
 perl-file-find-rule-perl
 perl-file-homedir
 perl-file-sharedir-pathclass
-perl-filter-simple
 perl-gnupg-interface
 perl-gpg
 perl-hash-safekeys
