@@ -20,11 +20,11 @@ PackagesFile.eachLine { line ->
         //folder.mkdirs()
       //}
       //publishers {
-        artifactDeployer {
-          includes('*.pkg.tar.xz')
-          remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
-          failIfNoFiles()
-          deleteRemoteArtifacts()
+        //artifactDeployer {
+          //includes('*.pkg.tar.xz')
+          //remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
+          //failIfNoFiles()
+          //deleteRemoteArtifacts()
         //}
         //postBuildScripts {
           //steps {
@@ -32,6 +32,23 @@ PackagesFile.eachLine { line ->
           //}
           //onlyIfBuildSucceeds(true)
         //}
+      //}
+    }
+    publishers {
+      artifactDeployer {
+        artifactsToDeploy {
+          includes('*.pkg.tar.xz')
+          remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
+          failIfNoFiles()
+          deleteRemoteArtifacts()
+        }
+      }
+      postBuildScripts {
+        steps {
+          //shell('/usr/bin/repo-add --new --quiet /var/www/archlinux/aur/os/x86_64/repo.db.tar.gz /var/www/archlinux/aur/*.pkg.tar.xz')
+          shell("sudo btrfs subvolume delete /mnt/aur/build-test/${packageName}")
+        }
+        onlyIfBuildSucceeds(true)
       }
     }
   }
