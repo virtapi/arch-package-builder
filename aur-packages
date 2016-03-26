@@ -9,6 +9,7 @@ antimony
 apachedirectorystudio
 archlinux-themes-sddm
 arduino
+asciinema
 atom-editor
 atom-editor-bin
 aurvote
@@ -28,6 +29,7 @@ copyq
 cower
 cower-git
 cura
+dasht
 ddccontrol
 ddccontrol-db-git
 dmenu2
@@ -35,6 +37,7 @@ downgrade
 dropbox
 dunst-git
 dzen2-xft-xpm-xinerama-git
+exa-git
 faba-icon-theme-git
 faba-mono-icons-git
 fatrace
@@ -57,6 +60,7 @@ genymotion
 git-extras
 gitkraken
 gitstats-git
+gnome-terminal-fedora
 gohufont
 google-chrome
 google-play-music-desktop-player-git
@@ -80,6 +84,7 @@ jitsi
 john-mpi
 jpegexiforient
 jre
+jslint
 kde-agent
 kdeartwork-iconthemes
 kdepim4-runtime
@@ -320,6 +325,7 @@ rofi-git
 rofi-pass-git
 rofi-surfraw-git
 ruby-droplet_ctl-git
+rstudio-desktop-bin
 rxvt-unicode-patched
 skipfish
 slack-desktop
