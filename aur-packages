@@ -242,7 +242,6 @@ php56
 php-pear
 pktstat
 plank-theme-numix
-plasma-theme-papirus
 playerctl
 plex-media-server
 plymouth
@@ -303,7 +302,6 @@ rxvt-unicode-patched
 skipfish
 slack-desktop
 slowhttptest
-smplayer-theme-papirus
 sowing
 spotify
 spotify-beta
@@ -336,7 +334,6 @@ violet
 virtualbox-ext-oracle
 visual-studio-code
 vivaldi
-vlc-skin-papirus
 vte290
 w3watch-git
 webstorm
@@ -348,7 +345,6 @@ xbindkeys_config
 xcb-util-cursor-git
 xcwd-git
 xininfo-git
-yakuake-skin-papirus
 yanc-font-git
 yaourt
 ytnef
