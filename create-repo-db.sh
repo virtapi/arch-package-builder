@@ -9,3 +9,5 @@
 
 cd /var/www/archlinux/aur/os/x86_64 || exit
 find . -type f -name "*.pkg.tar.xz" -exec repo-add --new aur.db.tar.gz {} \;
+chown jenkins:jenkins aur.db*
+chown jenkins:jenkins aur.files*
