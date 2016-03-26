@@ -13,26 +13,7 @@ PackagesFile.eachLine { line ->
     }
     steps {
       // updates are fine, but there is currently no working locking
-      //shell("sudo /usr/bin/arch-nspawn /mnt/aur/build_test/root pacman -Syyu; sudo /usr/bin/makechrootpkg -c -r /mnt/aur/build_test -l ${packageName}")
       shell("sudo /usr/bin/makechrootpkg -u -c -r /mnt/aur/build_test -l ${packageName}")
-      //def folder = new File("/var/www/archlinux/${packageName}/")
-      //if( !folder.exists() ) {
-        //folder.mkdirs()
-      //}
-      //publishers {
-        //artifactDeployer {
-          //includes('*.pkg.tar.xz')
-          //remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
-          //failIfNoFiles()
-          //deleteRemoteArtifacts()
-        //}
-        //postBuildScripts {
-          //steps {
-            //shell('/usr/bin/repo-add --new --quiet /var/www/archlinux/aur/repo.db.tar.gz /var/www/archlinux/aur/*.pkg.tar.xz')
-          //}
-          //onlyIfBuildSucceeds(true)
-        //}
-      //}
     }
     publishers {
       artifactDeployer {
