@@ -213,8 +213,6 @@ perl-test-most
 perl-text-csv
 perl-text-csv-slurp
 perl-text-glob
-perl-text-tabs+wrap
-perl-text-upsidedown
 perl-type-tiny
 perl-universal-require
 perl-util-any
