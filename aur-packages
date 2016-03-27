@@ -168,7 +168,7 @@ perl-je
 perl-json-maybexs
 perl-lexical-persistence
 perl-list-pairwise
-perl-locale-maketext
+perl-locale-maketext-gettext
 perl-log-any
 perl-mail-checkuser
 perl-mail-gpg
