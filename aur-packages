@@ -92,7 +92,6 @@ libgfshare
 libgtkhtml
 libindicator
 libkfbapi
-libkgapi-git
 liblmdb-git
 libmowgli
 libpng12
@@ -129,16 +128,12 @@ pandoc-bin
 papirus
 pencil
 perl-alien-wxwidgets
-perl-app-clusterssh
 perl-app-fatpacker
-perl-attribute-handlers
 perl-b-keywords
 perl-calendar-simple
 perl-carp-always
 perl-constant-defer
 perl-cpanplus-dist-build
-perl-crypt-format
-perl-crypt-rsa-parse
 perl-css-dom
 perl-data-perl
 perl-devel-caller
@@ -198,7 +193,6 @@ perl-text-csv
 perl-text-glob
 perl-type-tiny
 perl-universal-require
-perl-util-any
 perl-www-scripter
 perl-www-scripter-plugin-javascript
 perl-wx
