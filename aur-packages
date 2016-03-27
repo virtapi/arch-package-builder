@@ -209,10 +209,8 @@ perl-task-weaken
 perl-term-readline-perl
 perl-test-cleannamespaces
 perl-test-corpus-audio-mpd
-perl-test-harness
 perl-test-most
 perl-text-csv
-perl-text-csv-slurp
 perl-text-glob
 perl-type-tiny
 perl-universal-require
@@ -336,7 +334,7 @@ perl-cpanel-json-xs
 perl-bareword-filehandles
 perl-indirect
 perl-multidimensional
-python2-flask-wtf
+python-flask-wtf
 python2-wtforms
 qwtpolar
 spatialindex
