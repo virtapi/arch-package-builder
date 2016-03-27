@@ -449,3 +449,8 @@ z3-git
 zeal-git
 python2-ordereddict
 python-glob2-git
+archlinux-lxdm-theme 1-3
+gnomishdark-theme 20140509-2
+linux-firmware-git 20160318.5f8ca0c-1
+slurm 0.4.3-1
+sublime-text 2.0.2-4
