@@ -448,3 +448,6 @@ z3-git
 zeal-git
 python2-ordereddict
 python-glob2-git
+corosync
+ha-glue
+pacemaker-stable
