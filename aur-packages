@@ -362,7 +362,6 @@ libowfat
 libpfm4
 libtinfo
 likwid
-linux-git
 makemkv
 mbox-git
 mediathek
@@ -452,3 +451,7 @@ python-glob2-git
 linux-firmware-git
 slurm
 sublime-text
+corosync
+ha-glue
+pacemaker-stable
+libqb
