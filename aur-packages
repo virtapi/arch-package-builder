@@ -448,6 +448,9 @@ z3-git
 zeal-git
 python2-ordereddict
 python-glob2-git
+linux-firmware-git
+slurm
+sublime-text
 corosync
 ha-glue
 pacemaker-stable
