@@ -21,7 +21,6 @@ PackagesFile.eachLine { line ->
       scm('H/20 * * * *')
     }
     steps {
-      // updates are fine, but there is currently no working locking
       shell("sudo /usr/bin/makechrootpkg -u -c -r /mnt/aur/build_test -l ${packageName}")
     }
     publishers {
