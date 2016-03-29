@@ -36,10 +36,12 @@ PackagesFile.eachLine { line ->
         steps {
           // remove old release from repodb, add new one
           shell("/usr/bin/repo-add --remove --new --quiet /var/www/archlinux/aur/os/x86_64/repo.db.tar.gz /var/www/archlinux/aur/${packageName}*.pkg.tar.xz")
+          // delete the unneded btrfs subvol to free up diskspace
           shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}")
         }
         onlyIfBuildSucceeds(true)
       }
+      // display fancy jokes and a picture of chuck
       chucknorris()
     }
   }
