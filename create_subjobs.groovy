@@ -7,7 +7,7 @@ PackagesFile.eachLine { line ->
     label('master')
     scm {
       git("https://aur.archlinux.org/${packageName}.git", 'master') { node ->
-        node / cleanBeforeCheckout()
+        cleanBeforeCheckout()
       }
     }
     triggers {
