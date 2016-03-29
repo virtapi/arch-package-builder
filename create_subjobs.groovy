@@ -35,7 +35,7 @@ PackagesFile.eachLine { line ->
       postBuildScripts {
         steps {
           // remove old release from repodb, add new one
-          shell("/usr/bin/repo-add --remove --new --quiet /var/www/archlinux/aur/os/x86_64/repo.db.tar.gz /var/www/archlinux/aur/${packageName}*.pkg.tar.xz")
+          shell("/usr/bin/repo-add --remove --new --quiet /var/www/archlinux/aur/os/x86_64/repo.db.tar.gz /var/www/archlinux/aur/os/x86_64/${packageName}*.pkg.tar.xz")
           // delete the unneded btrfs subvol to free up diskspace
           shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}")
         }
