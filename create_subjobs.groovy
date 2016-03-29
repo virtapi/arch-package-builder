@@ -6,7 +6,9 @@ PackagesFile.eachLine { line ->
     concurrentBuild()
     label('master')
     scm {
-      git("https://aur.archlinux.org/${packageName}.git", 'master')
+      git("https://aur.archlinux.org/${packageName}.git", 'master') { node ->
+        node / cleanBeforeCheckout()
+      }
     }
     triggers {
       scm('H/20 * * * *')
