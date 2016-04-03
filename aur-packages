@@ -457,3 +457,4 @@ pacemaker-stable
 libqb
 sheepdog
 kafka
+zookeeper
