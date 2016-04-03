@@ -456,3 +456,4 @@ ha-glue
 pacemaker-stable
 libqb
 sheepdog
+kafka
