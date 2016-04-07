@@ -7,6 +7,8 @@ Toolbox to create a continuous Delivery Platform with Jenkins-CI for Arch Packag
 + [Project Description](#project-description)
 + [CD System](#cd-system)
 + [Usage](#usage)
++ [Contact](#contact)
++ [Contribution](#contribution)
 
 ---
 
@@ -29,3 +31,13 @@ Server = http://mirror.virtapi.org/archlinux/$repo/os/$arch/
 ```
 
 We also run a modifed version of [Arch Linux Archive](https://wiki.archlinux.org/index.php/Arch_Linux_Archive) which holds all official repositories + our AUR repo, you find it at [http://archive.virtapi.org/](http://archive.virtapi.org/)
+
+---
+
+## Contact
+You can meet us in #virtapi at freenode.
+
+---
+
+## Contribution
+We've defined our contribution rules in [CONTRIBUTING.md](CONTRIBUTING.md).
