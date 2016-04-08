@@ -106,6 +106,9 @@ meshlab
 mimi-git
 minecraft
 minted
+mkdocs
+mkdocs-bootstrap
+mkdocs-bootswatch
 movgrab
 mpd-sima
 mpich
@@ -223,6 +226,7 @@ python2-dulwich
 python2-gtkhtml2
 python2-i3-git
 python2-larch
+python-livereload
 python2-mpd2
 python2-mygpoclient
 python2-pgpdump
