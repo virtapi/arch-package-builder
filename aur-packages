@@ -226,6 +226,7 @@ python2-dulwich
 python2-gtkhtml2
 python2-i3-git
 python2-larch
+python-livereload
 python2-mpd2
 python2-mygpoclient
 python2-pgpdump
