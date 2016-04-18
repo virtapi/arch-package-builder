@@ -47,5 +47,5 @@ PackagesFile.eachLine { line ->
       chucknorris()
     }
   }
-  queue("Arch_Package_${packageName}")
+  //queue("Arch_Package_${packageName}")
 }
