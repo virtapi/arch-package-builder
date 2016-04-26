@@ -55,6 +55,7 @@ freshplayerplugin
 fritzing
 fzf-extras
 gdal1
+gdcm
 genymotion
 git-extras
 gitkraken
@@ -76,6 +77,7 @@ i3-gaps-git
 i3-workspace-switch
 iat
 ino
+insight-toolkit
 isl
 ix
 java3d
@@ -87,6 +89,7 @@ jre
 jslint
 kicad-pretty-git
 kio-mtp-git
+laszip
 lemonbar-git
 libappindicator
 libcurl-compat
@@ -96,10 +99,13 @@ libgfshare
 libgtkhtml
 libindicator
 libkfbapi
+libkml
+liblas
 liblmdb-git
 libmowgli
 libpng12
 libspotify
+libsvm
 libudev.so.0
 livestreamer-dev-git
 lostfiles
@@ -126,6 +132,8 @@ octopi
 oh-my-zsh-git
 ols
 openblas-lapack
+orfeo-toolbox
+ossim
 out2html-git
 pacaur
 pacaur-git
