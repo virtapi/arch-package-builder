@@ -503,3 +503,5 @@ perl-poe-component-pluggable
 phpstorm
 diamond
 python2-pysensors
+radeon-profile-git
+radeon-profile-daemon-git
