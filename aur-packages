@@ -505,3 +505,6 @@ diamond
 python2-pysensors
 radeon-profile-git
 radeon-profile-daemon-git
+ruby-xapian-findex
+ruby-xapian
+ruby-filemagic
