@@ -531,3 +531,4 @@ papirus-sddm-theme
 libtinfo5
 puppetserver
 leiningen
+leiningen-completions
