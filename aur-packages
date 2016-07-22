@@ -530,5 +530,6 @@ papirus-plasma-theme
 papirus-sddm-theme
 libtinfo5
 puppetserver
+python-pika
 leiningen
 leiningen-completions
