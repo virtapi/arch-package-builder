@@ -534,3 +534,7 @@ python-pika
 python2-pika
 leiningen
 leiningen-completions
+influxdb
+ruby-influxdb
+python2-influxdb
+python-influxdb
