@@ -229,6 +229,7 @@ printrun-git
 profile-sync-daemon
 puppetdb
 puppetdb-terminus
+pyca
 pycharm-community
 pycharm-professional
 python2-cliapp
