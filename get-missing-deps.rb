@@ -44,11 +44,11 @@ def is_no_official_package?(package)
 end
 
 def add_deps(deps)
-#  unless deps.nil?
+  #  unless deps.nil?
   deps.each do |dep|
     add_dep dep
   end
-#  end
+  #  end
 end
 
 def add_dep(dep)
