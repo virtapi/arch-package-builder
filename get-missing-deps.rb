@@ -54,7 +54,7 @@ end
 def add_dep(dep)
   dep = dep.slice(%r{^[a-zA-Z0-9@.+_-]+})
   puts "\t processing dep #{dep}"
-  if (is_no_official_package?(dep)) && (!@aur_packages.include? dep)
+  if is_no_official_package?(dep) && (!@aur_packages.include? dep)
     puts "found dep #{dep}"
     # @aur_packages << dep
     @matches << dep
