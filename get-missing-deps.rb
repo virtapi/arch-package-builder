@@ -35,7 +35,7 @@ def get_deps_for_package package
   uri = URI.parse("#{@aur_url}#{package}")
   res = @http.request(Net::HTTP::Get.new(uri.request_uri))
   ary = JSON.load(res.body)['results']
-  #ary[0].key?("Depends") ? ary[0]["Depends"] : ''
+  # ary[0].key?("Depends") ? ary[0]["Depends"] : ''
   ary.length > 0 ? ary[0]["Depends"] : ''
 end
 
@@ -56,7 +56,7 @@ def add_dep dep
   puts "\t processing dep #{dep}"
   if (is_no_official_package?(dep)) && (!@aur_packages.include? dep)
     puts "found dep #{dep}"
-    #@aur_packages << dep
+    # @aur_packages << dep
     @matches << dep
   end
 end
