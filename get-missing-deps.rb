@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# frozen_string_literal: true
 
 ##
 # Written by bastelfreak
@@ -15,7 +16,7 @@ require 'net/http'
 @http = ''
 @matches = []
 # read files
-def get_all_packages path
+def get_all_packages(path)
   @aur_packages = []
   f = IO.readlines path
   f.each do |line|
@@ -31,40 +32,40 @@ def aur_api_connect
   @http = http
 end
 
-def get_deps_for_package package
+def get_deps_for_package(package)
   uri = URI.parse("#{@aur_url}#{package}")
   res = @http.request(Net::HTTP::Get.new(uri.request_uri))
   ary = JSON.load(res.body)['results']
-  #ary[0].key?("Depends") ? ary[0]["Depends"] : ''
-  ary.length > 0 ? ary[0]["Depends"] : ''
+  # ary[0].key?("Depends") ? ary[0]["Depends"] : ''
+  !ary.empty? ? ary[0]['Depends'] : ''
 end
 
-def is_no_official_package? package
+def no_official_package?(package)
   !system("pacman -Ssq #{package}", :out => File::NULL)
 end
 
-def add_deps deps
-#  unless deps.nil?
-    deps.each do |dep|
-      add_dep dep
-    end
-#  end
+def add_deps(deps)
+  #  unless deps.nil?
+  deps.each do |dep|
+    add_dep dep
+  end
+  #  end
 end
 
-def add_dep dep
-  dep = dep.slice(/^[a-zA-Z0-9@.+_-]+/)
+def add_dep(dep)
+  dep = dep.slice(%r{^[a-zA-Z0-9@.+_-]+})
   puts "\t processing dep #{dep}"
-  if (is_no_official_package?(dep)) && (!@aur_packages.include? dep)
+  if no_official_package?(dep) && (!@aur_packages.include? dep)
     puts "found dep #{dep}"
-    #@aur_packages << dep
+    # @aur_packages << dep
     @matches << dep
   end
 end
 
-def get_all_deps_for_every_package
+def all_deps_for_every_package
   counter = 0
   @aur_packages.each do |package|
-    counter = counter + 1
+    counter += 1
     puts "processing package #{package} (#{counter}/#{@aur_packages.count})"
     deps = get_deps_for_package package
     add_deps deps if deps.is_a? Array
@@ -72,12 +73,12 @@ def get_all_deps_for_every_package
 end
 
 def cycle_until_all_deps_are_found
-  get_all_deps_for_every_package
-  if @matches.length > 0
-    puts "we found one or more deps, adding them to the file and rescan"
+  all_deps_for_every_package
+  unless @matches.empty?
+    puts 'we found one or more deps, adding them to the file and rescan'
     @matches = @matches.uniq
     @aur_packages = @matches
-    File.open(@path, "a") do |f|
+    File.open(@path, 'a') do |f|
       f.puts(@matches)
     end
     @matches = []
@@ -89,4 +90,3 @@ end
 aur_api_connect
 get_all_packages @path
 cycle_until_all_deps_are_found
-
