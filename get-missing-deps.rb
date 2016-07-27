@@ -64,7 +64,7 @@ end
 def get_all_deps_for_every_package
   counter = 0
   @aur_packages.each do |package|
-    counter = counter + 1
+    counter += 1
     puts "processing package #{package} (#{counter}/#{@aur_packages.count})"
     deps = get_deps_for_package package
     add_deps deps if deps.is_a? Array
