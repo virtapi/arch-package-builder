@@ -10,4 +10,10 @@ before_install:
   - gem --version
   - bundle -v
 script:
-  - 'bundle exec rake rubocop'
+  - 'bundle exec rake $CHECK'
+matrix:
+  fast_finish: true
+  include:
+  - rvm: 2.3.1
+    env: CHECK=rubocop
+
