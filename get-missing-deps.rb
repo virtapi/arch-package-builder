@@ -45,9 +45,9 @@ end
 
 def add_deps(deps)
 #  unless deps.nil?
-    deps.each do |dep|
-      add_dep dep
-    end
+  deps.each do |dep|
+    add_dep dep
+  end
 #  end
 end
 
