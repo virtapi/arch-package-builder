@@ -73,7 +73,7 @@ end
 
 def cycle_until_all_deps_are_found
   get_all_deps_for_every_package
-  if !@matches.empty?
+  unless @matches.empty?
     puts 'we found one or more deps, adding them to the file and rescan'
     @matches = @matches.uniq
     @aur_packages = @matches
