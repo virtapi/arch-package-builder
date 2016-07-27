@@ -16,4 +16,5 @@ matrix:
   include:
   - rvm: 2.3.1
     env: CHECK=rubocop
-
+notifications:
+  email: false
