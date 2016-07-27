@@ -89,4 +89,3 @@ end
 aur_api_connect
 get_all_packages @path
 cycle_until_all_deps_are_found
-
