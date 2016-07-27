@@ -36,7 +36,7 @@ def get_deps_for_package package
   res = @http.request(Net::HTTP::Get.new(uri.request_uri))
   ary = JSON.load(res.body)['results']
   # ary[0].key?("Depends") ? ary[0]["Depends"] : ''
-  ary.length > 0 ? ary[0]["Depends"] : ''
+  !ary.empty? ? ary[0]["Depends"] : ''
 end
 
 def is_no_official_package? package
@@ -73,7 +73,7 @@ end
 
 def cycle_until_all_deps_are_found
   get_all_deps_for_every_package
-  if @matches.length > 0
+  if !@matches.empty?
     puts "we found one or more deps, adding them to the file and rescan"
     @matches = @matches.uniq
     @aur_packages = @matches
