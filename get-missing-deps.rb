@@ -15,7 +15,7 @@ require 'net/http'
 @http = ''
 @matches = []
 # read files
-def get_all_packages path
+def get_all_packages(path)
   @aur_packages = []
   f = IO.readlines path
   f.each do |line|
@@ -31,7 +31,7 @@ def aur_api_connect
   @http = http
 end
 
-def get_deps_for_package package
+def get_deps_for_package(package)
   uri = URI.parse("#{@aur_url}#{package}")
   res = @http.request(Net::HTTP::Get.new(uri.request_uri))
   ary = JSON.load(res.body)['results']
@@ -39,11 +39,11 @@ def get_deps_for_package package
   !ary.empty? ? ary[0]["Depends"] : ''
 end
 
-def is_no_official_package? package
+def is_no_official_package?(package)
   !system("pacman -Ssq #{package}", :out => File::NULL)
 end
 
-def add_deps deps
+def add_deps(deps)
 #  unless deps.nil?
     deps.each do |dep|
       add_dep dep
@@ -51,7 +51,7 @@ def add_deps deps
 #  end
 end
 
-def add_dep dep
+def add_dep(dep)
   dep = dep.slice(/^[a-zA-Z0-9@.+_-]+/)
   puts "\t processing dep #{dep}"
   if (is_no_official_package?(dep)) && (!@aur_packages.include? dep)
