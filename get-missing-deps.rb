@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# frozen_string_literal: true
 
 ##
 # Written by bastelfreak
@@ -39,7 +40,7 @@ def get_deps_for_package(package)
   !ary.empty? ? ary[0]['Depends'] : ''
 end
 
-def is_no_official_package?(package)
+def no_official_package?(package)
   !system("pacman -Ssq #{package}", :out => File::NULL)
 end
 
@@ -54,14 +55,14 @@ end
 def add_dep(dep)
   dep = dep.slice(%r{^[a-zA-Z0-9@.+_-]+})
   puts "\t processing dep #{dep}"
-  if is_no_official_package?(dep) && (!@aur_packages.include? dep)
+  if no_official_package?(dep) && (!@aur_packages.include? dep)
     puts "found dep #{dep}"
     # @aur_packages << dep
     @matches << dep
   end
 end
 
-def get_all_deps_for_every_package
+def all_deps_for_every_package
   counter = 0
   @aur_packages.each do |package|
     counter += 1
@@ -72,7 +73,7 @@ def get_all_deps_for_every_package
 end
 
 def cycle_until_all_deps_are_found
-  get_all_deps_for_every_package
+  all_deps_for_every_package
   unless @matches.empty?
     puts 'we found one or more deps, adding them to the file and rescan'
     @matches = @matches.uniq
