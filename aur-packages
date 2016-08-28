@@ -54,6 +54,7 @@ freerdp-git
 freshplayerplugin
 fritzing
 fzf-extras
+gajim-plugin-omemo
 gdal1
 gdcm
 genymotion
@@ -232,6 +233,8 @@ puppetdb-terminus
 pyca
 pycharm-community
 pycharm-professional
+python2-axolotl
+python2-axolotl-curve25519
 python2-cliapp
 python2-dulwich
 python2-gtkhtml2
