@@ -101,6 +101,7 @@ libgtkhtml
 libindicator
 libkfbapi
 libkml
+libkqueue
 liblas
 liblmdb-git
 libmowgli
@@ -285,6 +286,7 @@ stressapptest
 stuffkeeper-git
 sublime-text-dev
 sway-git
+swift
 teamviewer
 teiler-git
 telegram-desktop-bin
