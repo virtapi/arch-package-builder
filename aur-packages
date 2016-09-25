@@ -566,3 +566,6 @@ vdirsyncer
 khard
 python-wsgi-intercept
 radicale
+python-pytest-xprocess
+python-pytest-localserver
+python-pytest-subtesthack
