@@ -99,7 +99,7 @@ libgcrypt15
 libgfshare
 libgtkhtml
 libindicator
-libkfbapi-api
+libkfbapi-git
 libkml
 libkqueue
 liblas
