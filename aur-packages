@@ -564,3 +564,5 @@ kubectl-bin
 python-vobject
 vdirsyncer
 khard
+python-wsgi-intercept
+radicale
