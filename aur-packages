@@ -466,6 +466,7 @@ vlc-htsp-plugin-git
 w_scan
 wacom-udev
 xpra-winswitch
+yarn
 z3-git
 zeal-git
 python2-ordereddict
