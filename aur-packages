@@ -684,7 +684,6 @@ python-formatstring
 python-keystone-git
 python-libarchive-c-git
 python-olefile
-python-pyshark
 python-ropper-git
 python-stopit
 python-trollius
@@ -698,7 +697,6 @@ python2-formatstring
 python2-keystone-git
 python2-libarchive-c-git
 python2-olefile
-python2-pyshark
 python2-ropper-git
 python2-stopit
 python2-tweepy
@@ -792,3 +790,4 @@ python2-gitpython
 halberd
 pyexiftool
 pdb-clone
+pyshark
