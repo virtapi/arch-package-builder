@@ -685,7 +685,6 @@ python-keystone-git
 python-libarchive-c-git
 python-olefile
 python-pdb-clone
-python-pyexiftool
 python-pyshark
 python-ropper-git
 python-stopit
@@ -701,7 +700,6 @@ python2-keystone-git
 python2-libarchive-c-git
 python2-olefile
 python2-pdb-clone
-python2-pyexiftool
 python2-pyshark
 python2-ropper-git
 python2-stopit
@@ -794,3 +792,4 @@ python2-cluster
 python2-ntlm
 python2-gitpython
 halberd
+pyexiftool
