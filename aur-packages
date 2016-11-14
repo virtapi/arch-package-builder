@@ -629,7 +629,6 @@ bokken
 bokken-hg
 byacc-bison
 clamtk
-cowfortune
 cowrie
 cowrie-git
 dhcping
@@ -670,7 +669,7 @@ nethack-patch
 nikto-git
 nsoq
 nsoq-git
-owl-lisp
+owl-lisp-git
 peda-git
 pidgin-privacy-please
 pidgin-privacy-please-git
@@ -688,7 +687,6 @@ python-yara-git
 python2-darts.util.lru
 python2-tweepy
 qira
-radamsa
 radamsa-git
 radare2-bindings
 rats
