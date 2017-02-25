@@ -39,7 +39,7 @@ PackagesFile.eachLine { line ->
           // remove old release from repodb, add new one
           //shell("/usr/bin/repo-add --remove --quiet /var/www/archlinux/aur/os/x86_64/aur.db.tar.gz /var/www/archlinux/aur/os/x86_64/${packageName}*.pkg.tar.xz")
           // delete the unneded btrfs subvol to free up diskspace
-          shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}/var/lib/machines;")
+          shell("test -d /mnt/aur/build_test/${packageName}/var/lib/machines && sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}/var/lib/machines;")
           shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}")
         }
         onlyIfBuildSucceeds(true)
