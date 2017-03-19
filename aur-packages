@@ -791,3 +791,7 @@ logstash
 pg_activity
 rider-eap
 ctop
+alertmanager-bin
+prometheus-bin
+prometheus-fritzbox-exporter-git
+prometheus-node-exporter-bin
