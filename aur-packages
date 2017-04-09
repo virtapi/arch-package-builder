@@ -795,3 +795,4 @@ alertmanager-bin
 prometheus-bin
 prometheus-fritzbox-exporter-git
 prometheus-node-exporter-bin
+python-pyqt5-hotfix
