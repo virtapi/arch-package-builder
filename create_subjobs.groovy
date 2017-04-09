@@ -27,20 +27,14 @@ PackagesFile.eachLine { line ->
       artifactDeployer {
         artifactsToDeploy {
           includes('*.pkg.tar.xz')
-          remoteFileLocation("/var/www/archlinux/aur/os/x86_64/")
+          remoteFileLocation("/var/lib/jenkins/packages/")
           failIfNoFiles()
           deleteRemoteArtifacts()
         }
       }
       postBuildScripts {
         steps {
-          // add a sync() call, which may prevent broken repo DB
-          shell('sync;')
-          // remove old release from repodb, add new one
-          //shell("/usr/bin/repo-add --remove --quiet /var/www/archlinux/aur/os/x86_64/aur.db.tar.gz /var/www/archlinux/aur/os/x86_64/${packageName}*.pkg.tar.xz")
-          // delete the unneded btrfs subvol to free up diskspace
-          shell("test -d /mnt/aur/build_test/${packageName}/var/lib/machines && sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}/var/lib/machines;")
-          shell("sudo /usr/bin/btrfs subvolume delete /mnt/aur/build_test/${packageName}")
+          shell("/usr/local/bin/copy-and-cleanup ${packageName}");
         }
         onlyIfBuildSucceeds(true)
       }
