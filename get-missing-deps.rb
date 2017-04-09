@@ -4,7 +4,7 @@
 ##
 # Written by bastelfreak
 ##
-# enable your local multilib package
+# enable your local multilib repo
 ##
 
 require 'json'
