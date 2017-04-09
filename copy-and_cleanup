@@ -35,7 +35,7 @@ if [ -n "$1" ]; then
     echo "cleaned up ${BUILDDIR}/${packagebase}/var/lib/machines"
   fi
   # this should be true for all builds, but you never know...
-  if [ -d "${BUILDDIR}/${packagebase}/var/lib/machines" ]; then
+  if [ -d "${BUILDDIR}/${packagebase}" ]; then
     sudo /usr/bin/btrfs subvolume delete "${BUILDDIR}/${packagebase}"
     echo "cleaned up ${BUILDDIR}/${packagebase}"
   fi
