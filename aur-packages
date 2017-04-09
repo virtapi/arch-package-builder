@@ -483,7 +483,6 @@ kafka
 zookeeper
 xcowsay
 puppet3
-zabbix3
 facter2
 ruby-augeas
 laptop-mode-tools
