@@ -596,7 +596,6 @@ python-virustotal-api
 python2-oletools
 python2-piexif
 python2-pydeep
-python2-pypdns
 python2-pype32
 python2-virustotal-api
 vim-ctrlp-git
@@ -806,3 +805,4 @@ cni-git
 gstreamer0.10
 lib32-libmng
 python-smmap2
+python-pypdns
