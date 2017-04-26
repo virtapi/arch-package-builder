@@ -1,3 +1,4 @@
+// add a useless comment to trigger a diff to trigger a commit to trigger a PR to trigger a mass rebuild
 def PackagesFile = new File('/var/lib/jenkins/jobs/Arch Package Builder/workspace/aur-packages')
 PackagesFile.eachLine { line ->
   packageName = line.trim()
