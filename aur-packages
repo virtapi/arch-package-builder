@@ -807,3 +807,4 @@ lib32-libmng
 python-smmap2
 python-pypdns
 f2c
+pgtune-git
