@@ -431,7 +431,6 @@ perlconsole
 pli-bin
 pycarddav
 python-ansi
-python-argparse
 python-atomicwrites
 python-click-log
 python-click-threading
