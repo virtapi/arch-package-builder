@@ -813,3 +813,4 @@ libopenssl-1.0-compat
 osl
 govendor
 google-breakpad-git
+depot-tools-git
