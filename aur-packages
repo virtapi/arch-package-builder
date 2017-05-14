@@ -810,3 +810,4 @@ pgtune-git
 pgloader
 libcurl-openssl-1.0
 libopenssl-1.0-compat
+osl
