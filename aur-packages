@@ -814,3 +814,4 @@ osl
 govendor
 google-breakpad-git
 depot-tools-git
+lizardfs
