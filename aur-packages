@@ -815,3 +815,4 @@ govendor
 google-breakpad-git
 depot-tools-git
 lizardfs
+lib32-libmng
