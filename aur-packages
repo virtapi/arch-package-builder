@@ -817,3 +817,4 @@ depot-tools-git
 lizardfs
 lib32-libmng
 perl-test-object
+perl-test-subcalls
