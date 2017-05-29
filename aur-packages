@@ -818,3 +818,4 @@ lizardfs
 lib32-libmng
 perl-test-object
 perl-test-subcalls
+perl-hook-lexwrap
