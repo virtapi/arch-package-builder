@@ -830,3 +830,4 @@ rpm-org
 libsolv
 libdnf
 libcomps
+python-iniparse
