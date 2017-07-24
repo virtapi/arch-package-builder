@@ -834,3 +834,4 @@ python-iniparse
 dnf
 dpkg
 apt
+yum-metadata-parser
