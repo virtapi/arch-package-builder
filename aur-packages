@@ -832,3 +832,4 @@ libdnf
 libcomps
 python-iniparse
 dnf
+dpkg
