@@ -833,3 +833,4 @@ libcomps
 python-iniparse
 dnf
 dpkg
+apt
