@@ -831,3 +831,4 @@ libsolv
 libdnf
 libcomps
 python-iniparse
+dnf
