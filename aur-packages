@@ -836,3 +836,4 @@ dpkg
 apt
 yum-metadata-parser
 python2-pyliblzma
+yum
