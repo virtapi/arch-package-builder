@@ -835,3 +835,4 @@ yum-metadata-parser
 python2-pyliblzma
 yum
 kubernetes-bin
+mkosi
