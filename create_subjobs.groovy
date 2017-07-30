@@ -27,7 +27,7 @@ PackagesFile.eachLine { line ->
     publishers {
       artifactDeployer {
         artifactsToDeploy {
-          includes('*.pkg.tar.xz')
+          includes('*.pkg.tar.*')
           remoteFileLocation("/var/lib/jenkins/packages/")
           failIfNoFiles()
           deleteRemoteArtifacts()
