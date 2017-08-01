@@ -836,3 +836,4 @@ python2-pyliblzma
 yum
 kubernetes-bin
 mkosi
+libsolv-git
