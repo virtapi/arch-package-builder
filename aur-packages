@@ -838,3 +838,4 @@ kubernetes-bin
 mkosi
 libsolv-git
 libzypp-git
+zypper-git
