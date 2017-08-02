@@ -817,6 +817,8 @@ perl-test-object
 perl-test-subcalls
 perl-hook-lexwrap
 perl-moose
+discord
+whatpulse
 gox
 vault
 ttf-octicons
