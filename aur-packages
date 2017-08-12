@@ -842,3 +842,4 @@ mkosi
 libsolv-git
 libzypp-git
 zypper-git
+etcd
