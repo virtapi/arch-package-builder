@@ -556,6 +556,7 @@ packettracer61
 ldapvi
 minikube
 kubectl-bin
+kubeadm-bin
 python-vobject
 vdirsyncer
 khard
