@@ -843,3 +843,4 @@ libsolv-git
 libzypp-git
 zypper-git
 etcd
+riemann
