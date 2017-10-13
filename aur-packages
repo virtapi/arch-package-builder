@@ -26,6 +26,7 @@ conky-lua
 copyq
 cower
 cower-git
+createrepo
 cura
 dasht
 ddccontrol
@@ -317,6 +318,7 @@ xcwd-git
 xininfo-git
 yanc-font-git
 yaourt
+yum-utils
 zeronet
 zukitwo-themes
 zzuf
