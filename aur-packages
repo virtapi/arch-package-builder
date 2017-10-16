@@ -772,7 +772,6 @@ cura-binary-data
 axoloti-git
 axoloti-runtime-git
 python35
-logstash
 pg_activity
 rider-eap
 ctop
