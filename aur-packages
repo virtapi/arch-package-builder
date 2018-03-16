@@ -290,10 +290,6 @@ sway-git
 swift
 teamviewer
 teiler-git
-telegram-desktop-bin
-telegram-purple
-telegram-desktop-git
-telegram-desktop
 tftp-hpa-destruct
 thermald
 thunarx-python
@@ -485,7 +481,6 @@ zookeeper
 xcowsay
 puppet3
 facter2
-ruby-augeas
 laptop-mode-tools
 laptop-mode-tools-git
 sslyze
@@ -850,4 +845,6 @@ virt-what
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 synergy2
+rider
 robo3t-bin
+urlgrabber
