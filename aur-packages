@@ -773,7 +773,7 @@ ctop
 alertmanager-bin
 prometheus
 prometheus-fritzbox-exporter-git
-prometheus-node-exporter-bin
+prometheus-node-exporter
 pyqt5-hotfix
 python2-crcmod
 google-cloud-sdk
