@@ -771,7 +771,7 @@ pg_activity
 rider-eap
 ctop
 alertmanager-bin
-prometheus-bin
+prometheus
 prometheus-fritzbox-exporter-git
 prometheus-node-exporter-bin
 pyqt5-hotfix
