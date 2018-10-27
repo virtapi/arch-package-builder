@@ -1,6 +1,5 @@
 // add a useless comment to trigger a diff to trigger a commit to trigger a PR to trigger a mass rebuild
-def PackagesFile = new File('/var/lib/jenkins/jobs/Arch Package Builder/workspace/aur-packages')
-PackagesFile.eachLine { line ->
+readFileFromWorkspace('aur-packages').eachLine { line ->
   packageName = line.trim()
   job("Arch_Package_${packageName}") {
     description("This Job builds the ${packageName} package for archlinux")
