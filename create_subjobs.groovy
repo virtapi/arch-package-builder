@@ -25,16 +25,9 @@ PackagesFile.eachLine { line ->
       shell("sudo /usr/bin/makechrootpkg -u -c -r /mnt/aur/build_test -l ${packageName}")
     }
     publishers {
-      artifactDeployer {
-        artifactsToDeploy {
-          includes('*.pkg.tar.*')
-          remoteFileLocation("/var/lib/jenkins/packages/")
-          failIfNoFiles()
-          deleteRemoteArtifacts()
-        }
-      }
       postBuildScripts {
         steps {
+          shell('cp "${WORKSPACE}/"*.pkg.tar.* /var/lib/jenkins/packages/')
           shell("/usr/local/bin/copy-and-cleanup ${packageName}");
         }
         onlyIfBuildSucceeds(true)
