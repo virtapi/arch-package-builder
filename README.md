@@ -7,10 +7,12 @@ Toolbox to create a continuous Delivery Platform with Jenkins-CI for Arch Packag
 + [Project Description](#project-description)
 + [CD System](#cd-system)
 + [Usage](#usage)
++ [Requirements for self-hosting](#requirements-for-self-hosting)
 + [Issues](#issues)
 + [License](#license)
 + [Contact](#contact)
 + [Contribution](#contribution)
+
 
 ---
 
@@ -33,6 +35,16 @@ Server = http://mirror.virtapi.org/archlinux/$repo/os/$arch/
 ```
 
 We also run a modifed version of [Arch Linux Archive](https://wiki.archlinux.org/index.php/Arch_Linux_Archive) which holds all official repositories + our AUR repo, you find it at [http://archive.virtapi.org/](http://archive.virtapi.org/)
+
+## Requirements for self-hosting
+### Jenkins Plugins
+- [job-dsl](https://plugins.jenkins.io/job-dsl) - create_subjobs.groovy needs it to create jobs from a DSL Script
+  You need to approve every change of the create_subjobs.groovy script under *Manage Jenkins > In-process Script Approval*
+- [postbuildscript](https://plugins.jenkins.io/postbuildscript) - needed to run post build scripts in DSL
+- [ChuckNorris] (https://plugins.jenkins.io/chucknorris) - Errors fears a Round House Kick from ChuckNorris!
+
+### Preperation for mkarchroot
+The script works currently with a fix path for the chroot environment, so you have to execute ```mkarchroot /mnt/aur/build_test/root base-devel```
 
 ---
 
