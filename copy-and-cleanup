@@ -17,26 +17,26 @@ if [ "$(whoami)" != "jenkins" ]; then
   exit 1
 fi
 
-cd $TMPDIR || exit 1
-for package in *.pkg.tar.*; do
+cd "${TMPDIR}" || exit 1
+while read -r package; do
+  pkgfile="$(basename "${package}")"
   mv "$package" "${FINALDIR}/"
-  repo-add --remove "${FINALDIR}/aur.db.tar.gz" "${FINALDIR}/${package}"
+  repo-add --remove "${FINALDIR}/aur.db.tar.gz" "${FINALDIR}/${pkgfile}"
   echo "added ${package}"
-done
-
-# clean up if jenkins provided us the package name
-if [ -n "$1" ]; then
-  packagebase="$1"
-  echo "cleaning up $packagebase"
-  # build that installed systemd components have another btrfs subvol
-  # this needs to be cleaned up first
-  if [ -d "${BUILDDIR}/${packagebase}/var/lib/machines" ]; then
-    sudo /usr/bin/btrfs subvolume delete "${BUILDDIR}/${packagebase}/var/lib/machines"
-    echo "cleaned up ${BUILDDIR}/${packagebase}/var/lib/machines"
+  # clean up if jenkins provided us the package name
+  if [ -n "$1" ]; then
+    packagebase="$1"
+    echo "cleaning up $packagebase"
+    # build that installed systemd components have another btrfs subvol
+    # this needs to be cleaned up first
+    if [ -d "${BUILDDIR}/${packagebase}/var/lib/machines" ]; then
+      sudo /usr/bin/btrfs subvolume delete "${BUILDDIR}/${packagebase}/var/lib/machines"
+      echo "cleaned up ${BUILDDIR}/${packagebase}/var/lib/machines"
+    fi
+    # this should be true for all builds, but you never know...
+    if [ -d "${BUILDDIR}/${packagebase}" ]; then
+      sudo /usr/bin/btrfs subvolume delete "${BUILDDIR}/${packagebase}"
+      echo "cleaned up ${BUILDDIR}/${packagebase}"
+    fi
   fi
-  # this should be true for all builds, but you never know...
-  if [ -d "${BUILDDIR}/${packagebase}" ]; then
-    sudo /usr/bin/btrfs subvolume delete "${BUILDDIR}/${packagebase}"
-    echo "cleaned up ${BUILDDIR}/${packagebase}"
-  fi
-fi
+done < <(find "${TMPDIR}" -maxdepth 1 -type f -iname '*.pkg.tar.xz' -o -iname '*.pkg.tar.zst')
