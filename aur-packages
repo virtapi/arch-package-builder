@@ -251,6 +251,7 @@ python2-power-git
 python2-puppetboard
 python-pykickstart
 python2-pypdf2
+python2-pysqlite
 python2-pysvn
 python2-tracing
 python2-ttystatus
